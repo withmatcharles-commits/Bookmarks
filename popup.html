@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Bookmark Manager</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Bookmarks</h1>
+      <div class="search-container">
+        <input type="text" id="searchInput" placeholder="Search bookmarks...">
+      </div>
+      <div id="breadcrumb" class="breadcrumb">
+        <span data-id="0">Root</span>
+      </div>
+    </header>
+    <main id="bookmarkList">
+      <!-- Bookmarks will be loaded here -->
+    </main>
+    <footer>
+      <button id="viewTaggedBtn">View Tagged Bookmarks</button>
+    </footer>
+  </div>
+  <script src="parser.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html>

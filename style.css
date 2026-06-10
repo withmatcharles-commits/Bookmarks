@@ -1,0 +1,118 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  width: 400px;
+  margin: 0;
+  padding: 10px;
+  background-color: #f8f9fa;
+  color: #333;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  margin-bottom: 10px;
+}
+
+h1 {
+  font-size: 1.2rem;
+  margin: 0 0 10px 0;
+  color: #2c3e50;
+}
+
+.search-container input {
+  width: 100%;
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+
+.breadcrumb {
+  margin-top: 8px;
+  font-size: 12px;
+  color: #7f8c8d;
+}
+
+.breadcrumb span {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.breadcrumb span:hover {
+  color: #3498db;
+}
+
+#bookmarkList {
+  max-height: 400px;
+  overflow-y: auto;
+  border-top: 1px solid #eee;
+  padding-top: 5px;
+}
+
+.bookmark-item {
+  display: flex;
+  align-items: center;
+  padding: 8px;
+  border-bottom: 1px solid #f1f1f1;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.bookmark-item:hover {
+  background-color: #ecf0f1;
+}
+
+.icon {
+  width: 16px;
+  height: 16px;
+  margin-right: 10px;
+}
+
+.title {
+  flex-grow: 1;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 14px;
+}
+
+.folder-icon::before {
+  content: "📁";
+  margin-right: 5px;
+}
+
+.link-icon::before {
+  content: "🔖";
+  margin-right: 5px;
+}
+
+footer {
+  margin-top: 10px;
+  padding-top: 5px;
+  border-top: 1px solid #ddd;
+  text-align: center;
+}
+
+#viewTaggedBtn {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+#viewTaggedBtn:hover {
+  background-color: #2980b9;
+}
+
+.tagged-info {
+  font-size: 10px;
+  color: #95a5a6;
+  margin-top: 2px;
+}

@@ -1,0 +1,12 @@
+{
+  "manifest_version": 3,
+  "name": "Advanced Bookmark Manager",
+  "version": "1.0",
+  "description": "A modern bookmark manager with search and tagged bookmark support.",
+  "permissions": [
+    "bookmarks"
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  }
+}
